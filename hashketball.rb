@@ -228,9 +228,7 @@ def long_name_steals_a_ton?
   
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
-      if player[:steals] == 10 && player[:player_name] == longest_name
-        return true
-      end
+      return true if player[:steals] == 10 && player[:player_name] == longest_name
     end
   end
 end
