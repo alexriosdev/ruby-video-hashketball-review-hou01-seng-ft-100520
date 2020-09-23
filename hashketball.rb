@@ -128,6 +128,7 @@ def game_hash
 end
 
 # Write code here
-def num_points_scored(name)
-  game_hash.each do |location, |
+def num_points_scored(player_name)
+  game_hash.each do |location, team_data|
+    location
 end
