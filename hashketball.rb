@@ -213,9 +213,6 @@ def winning_team
     end
   end
   
-  game_hash.each do |location, team_data|
-    return team_data[:team_name]
-  end
 end
 
 
