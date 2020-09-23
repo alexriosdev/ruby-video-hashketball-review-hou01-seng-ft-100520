@@ -201,9 +201,9 @@ def most_points_scored
   mvp_player
 end
 
-def most_points_scored
+def winning_team
   most_points = 0
-  mvp_player = ""
+  win_team = ""
   
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
