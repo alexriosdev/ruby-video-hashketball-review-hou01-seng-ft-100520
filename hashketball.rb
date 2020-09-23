@@ -234,6 +234,7 @@ def long_name_steals_a_ton?
 end
 
 def winning_team
+  game_hash[:home][:team_points] = 0
   most_points = 0
   
   game_hash.each do |location, team_data|
