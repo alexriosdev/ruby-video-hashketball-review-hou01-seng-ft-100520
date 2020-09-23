@@ -233,7 +233,20 @@ def long_name_steals_a_ton?
   end
 end
 
-
+def winning_team
+  most_points = 0
+  mvp_player = ""
+  
+  game_hash.each do |location, team_data|
+    team_data[:players].each do |player|
+      if player[:points] > most_points
+        most_points = player[:points]
+        mvp_player = player[:player_name]
+      end
+    end
+  end
+  mvp_player
+end
 
 
 # def winning_team
