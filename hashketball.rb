@@ -214,7 +214,7 @@ def winning_team
   end
   
   game_hash.each do |location, team_data|
-    return team_data[:team_name] if team_data[:team_points] > team_points[:team_points]
+    return team_data[:team_name]
   end
 end
 
