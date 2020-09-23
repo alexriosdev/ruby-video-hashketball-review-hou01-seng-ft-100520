@@ -201,13 +201,13 @@ def most_points_scored
   mvp_player
 end
 
-def winning_team
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |player|
-      team_data[:team_points] = team_data[:team_points] + player[:points]
-    end
-  end
+# def winning_team
+#   game_hash.each do |location, team_data|
+#     team_data[:players].each do |player|
+#       team_data[:team_points] = team_data[:team_points] + player[:points]
+#     end
+#   end
   
-end
+# end
 
 
