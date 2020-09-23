@@ -214,8 +214,8 @@ def player_with_longest_name
   longest_name
 end
 
-def player_with_longest_name
-  longest_name = ""
+def long_name_steals_a_ton?
+  longest_name = player_with_longest_name
   
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
