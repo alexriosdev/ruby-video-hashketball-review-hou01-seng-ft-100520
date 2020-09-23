@@ -202,18 +202,16 @@ def most_points_scored
 end
 
 def player_with_longest_name
-  most_points = 0
-  mvp_player = ""
+  longest_name = ""
   
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
-      if player[:player_name].length > most_points
-        most_points = player[:points]
-        mvp_player = player[:player_name]
+      if player[:player_name].length > longest_name.length
+        longest_name = player[:player_name]
       end
     end
   end
-  mvp_player
+  longest_name
 end
 
 
