@@ -255,13 +255,16 @@ def winning_team
   end
   
   game_hash.each do |location, team_data|
-    team_data[:players].each do |player|
-      if team_data[:team_points] > most_points
-        most_points = team_data[:team_points]
-      end
+    if team_data[:team_points] > most_points
+     most_points = team_data[:team_points]
     end
   end
   
+  game_hash.each do |location, team_data|
+    if team_data[:team_points] == most_points
+      return team_data[:team_name]
+    end
+  end
   
 end
 
