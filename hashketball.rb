@@ -211,14 +211,12 @@ def winning_team
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
       team_data[:team_points] += player[:points]
-      
-      # if player[:points] > most_points
-      #   most_points = player[:points]
-      #   mvp_player = player[:player_name]
-      # end
     end
   end
-  # mvp_player
+  
+  
+  
+  
 end
 
 
