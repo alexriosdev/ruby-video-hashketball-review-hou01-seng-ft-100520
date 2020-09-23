@@ -151,9 +151,5 @@ def team_colors(team_name)
 end
 
 def team_names
-  game_hash.each do |location, team_data|
-    team_data[:players].each do |player|
-      return player[:player_name]
-    end
-  end
+  game_hash.map { |team_data| team_data[:team_name] }
 end
