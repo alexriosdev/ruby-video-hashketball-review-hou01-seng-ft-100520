@@ -188,11 +188,10 @@ end
 # Bonus Questions
 def most_points_scored
   most_points = 0
-  rebounds = 0
   
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
-      if player[:shoe] > big_shoe
+      if player[:shoe] > most_points
         big_shoe = player[:shoe]
         rebounds = player[:rebounds]
       end
