@@ -202,10 +202,10 @@ def most_points_scored
 end
 
 def winning_team
-  most_points = 0
-  win_team = ""
-  game_hash[:home][:team_points] = 0
-  game_hash[:away][:team_points] = 0
+  # most_points = 0
+  # win_team = ""
+  # game_hash[:home][:team_points] = 0
+  # game_hash[:away][:team_points] = 0
   
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
