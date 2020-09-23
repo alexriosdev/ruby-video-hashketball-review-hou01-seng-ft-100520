@@ -154,7 +154,7 @@ def team_names
   game_hash.map { |location, team_data| team_data[:team_name] }
 end
 
-def player_numbers(player_name)
+def player_numbers(team_name)
   game_hash.each do |location, team_data|
     team_data[:players].each do |player|
       return player[:shoe] if player[:player_name] == player_name
